@@ -1,0 +1,31 @@
+{
+  "name": "pairsgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss build ./css/input.css -o ./css/output.css",
+    "watch": "postcss build ./css/input.css -o ./css/output.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss ./css/input.css -o ./css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanieAn/PairsGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephanieAn/PairsGame/issues"
+  },
+  "homepage": "https://github.com/StephanieAn/PairsGame#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^9.0.2"
+  }
+}
