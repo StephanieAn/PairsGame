@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    @apply bg-gray-800 text-white;
+}
+.header{
+    @apply text-white flex flex-col justify-center items-center p-5;
+}
+.header__title{
+    @apply text-center my-3 font-bold text-3xl;
+}
+.btn__start{
+    @apply border-2 rounded-md bg-green-700 w-28 py-2; 
+}
+.card{
+    @apply border-green-700 border-2 rounded-md w-32 h-28 object-cover;
+}
+.card:hover{
+
+}
+.card img{
+    @apply w-full object-fill;
+}
