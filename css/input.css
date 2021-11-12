@@ -14,12 +14,15 @@ body{
 .btn__start{
     @apply border-2 rounded-md bg-green-700 w-28 py-2; 
 }
+.playground{
+    @apply m-16 flex;
+}
 .card{
-    @apply border-green-700 border-2 rounded-md w-32 h-28 object-cover;
+    @apply m-5 border-green-700 border-4 rounded-md w-32 h-48 bg-green-500;
 }
-.card:hover{
-
-}
+/* .card:hover{
+    @apply 
+} */
 .card img{
-    @apply w-full object-fill;
+    @apply hidden w-full h-full object-cover;
 }
