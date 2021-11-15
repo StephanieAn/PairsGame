@@ -15,14 +15,14 @@ body{
     @apply border-2 rounded-md bg-green-700 w-28 py-2; 
 }
 .playground{
-    @apply m-16 flex;
+    @apply m-16 flex flex-wrap;
 }
 .card{
     @apply m-5 border-green-700 border-4 rounded-md w-32 h-48 bg-green-500;
 }
 /* .card:hover{
-    @apply 
+    @apply bg-red-800 transform scale-125;
 } */
 .card img{
-    @apply hidden w-full h-full object-cover;
+    @apply hidden border-green-700 border-4 rounded-md w-full h-full object-cover transform scale-125;
 }
