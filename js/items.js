@@ -34,6 +34,7 @@ let items = [
 let itemsJSON = JSON.stringify(items);
 window.localStorage.setItem('items', itemsJSON);
 let item = JSON.parse(window.localStorage.getItem('items'));
+let i = 0;
 
 export function Items() {    
     for (let index = 0 ; index < 20; index++) {
@@ -44,6 +45,8 @@ export function Items() {
         let clone = template.content.cloneNode(true);
     
         clone.querySelector("img").src= item[x].src;
+        clone.querySelector("img").alt = item[x].id;
+        clone.querySelector('button').setAttribute('id', i++);
     
         target.appendChild(clone);
         
