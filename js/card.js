@@ -1,6 +1,5 @@
 export let ClickOpen = () => {
- 
-    for (let index = 0; index < 20; index++) {
+    for (let index = 0; index < 18; index++) {
         let button = document.getElementById(index); 
         let child = button.lastElementChild;
         
