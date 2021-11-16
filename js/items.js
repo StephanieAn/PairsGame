@@ -36,7 +36,7 @@ window.localStorage.setItem('items', itemsJSON);
 let item = JSON.parse(window.localStorage.getItem('items'));
 let i = 0;
 
-export function Items() {    
+export let Items =() => {    
     for (let index = 0 ; index < 20; index++) {
         let x = Math.round(Math.random() * 9);
         
