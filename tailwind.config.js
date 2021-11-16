@@ -3,26 +3,15 @@ const colors = require('tailwindcss/colors');
 module.exports = {
     purge:['./*.html'],
     theme: {
+      screens: {
+        'extra-small': {'min': '275px', 'max':'474px'},
+        'small': {'min': '475px', 'max': '639px'},
+        'medium': {'min': '640px', 'max': '959px'},
+        'large': {'min': '960px', 'max': '1269px'},
+        'extra-large': {'min': '1270px', 'max': '1919px'},
+        'xxl': {'min': '1920px'},
+      },
       extend: {
-        screens: {
-          'xs': '366px',
-          // => @media (min-width: 366px) {...}
-
-          'sm': '640px',
-          // => @media (min-width: 640px) { ... }
-    
-          'md': '768px',
-          // => @media (min-width: 768px) { ... }
-    
-          'lg': '1024px',
-          // => @media (min-width: 1024px) { ... }
-    
-          'xl': '1280px',
-          // => @media (min-width: 1280px) { ... }
-    
-          '2xl': '1536px',
-          // => @media (min-width: 1536px) { ... }
-        },
         colors: {
           transparent: 'transparent',
           black: colors.black,
