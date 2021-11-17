@@ -6,6 +6,6 @@ export let Pairs = () => {
         
         butt.addEventListener('click', () => {
             console.log(lastChild.alt);
-        })
+        });
     };
 };
