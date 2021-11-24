@@ -1,11 +1,8 @@
-import {Items} from './items.js';
-import {ClickOpen} from './card.js';
-import {Pairs} from './pairs.js';
-import {Play} from './play.js';
+const cards = document.querySelectorAll('.card');
 
-Play();
-Items();
-ClickOpen();
-Pairs();
+function flipCard() {
+    this.classList.toggle('flip');
+    this.lastElementChild.style.display = 'flex'; 
+}
 
-console.table(window.frames[0]);
+cards.forEach(card => card.addEventListener('click', flipCard));
