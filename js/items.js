@@ -39,6 +39,5 @@ export let Items = () => {
         clone.querySelector('button').setAttribute('Onclick', null);
         
         target.appendChild(clone);
-        };
-      
+    };
 };

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply bg-gray-800 text-white h-auto;
+    @apply bg-gray-800 text-white h-auto flex flex-col;
 }
 .header{
     @apply text-white flex flex-col justify-center items-center p-5;
@@ -15,10 +15,10 @@ body{
     @apply border-2 rounded-md bg-green-700 w-28 py-2; 
 }
 .playground{
-    @apply m-8 flex flex-wrap items-center justify-center h-auto;
+    @apply m-auto flex flex-wrap items-center justify-center h-auto;
 }
 .card{
-    @apply mx-12 my-10 border-green-700 border-4 rounded-md w-28 h-44 bg-green-500;
+    @apply mx-12 my-10 border-green-700 border-4 rounded-md w-1/12 h-44 bg-green-500;
 }
 .card:hover{
     @apply bg-green-700;
