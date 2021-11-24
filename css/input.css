@@ -20,9 +20,12 @@ body{
 .card{
     @apply mx-12 my-10 border-green-700 border-4 rounded-md w-1/12 h-44 bg-green-500;
 }
+/* .card:active{
+    @apply bg-green-700;
+} */
 .card:hover{
     @apply bg-green-700;
 }
 .card img{
-    @apply hidden border-green-700 border-4 rounded-md w-full h-full object-cover transform scale-125;
+    @apply hidden border-green-700 border-4 rounded-md w-full h-full object-cover;
 }
