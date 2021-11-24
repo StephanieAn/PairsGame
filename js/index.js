@@ -3,6 +3,15 @@ let hasFlipped = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+(function seeCard(){
+    cards.forEach(card => {
+        setTimeout(() => {
+            card.lastElementChild.style.display = 'none';
+        }, 10000);
+        
+    });
+})();
+
 function flipCard() {
     if(lockBoard)return;
     if(this === firstCard) return false;
@@ -33,7 +42,7 @@ let disableEvent = () =>{
 
 let unFlip = () => {
     lockBoard = true;
-
+    alert(`False answer, try again !`);
     setTimeout(() => {
         firstCard.classList.remove('flip');
         firstCard.lastElementChild.style.display = 'none'; 
@@ -52,7 +61,7 @@ function resetBoard(){
     cards.forEach(card => {
         let random = Math.floor(Math.random()*19);
         card.style.order = random;
-    })
+    });
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));

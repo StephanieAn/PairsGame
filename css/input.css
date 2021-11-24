@@ -27,5 +27,5 @@ body{
     @apply bg-green-700;
 }
 .card img{
-    @apply hidden border-green-700 border-4 rounded-md w-full h-full object-cover;
+    @apply border-green-700 border-4 rounded-md w-full h-full object-cover;
 }
