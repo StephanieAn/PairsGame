@@ -65,3 +65,10 @@ function resetBoard(){
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+let dark = document.getElementById('btnSubmit');
+console.log(document.querySelector('html'));
+
+dark.addEventListener('click', () => {
+    document.querySelector('html').setAttribute('class', 'dark');
+});

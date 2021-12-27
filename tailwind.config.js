@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
     purge:['./*.html'],
+    darkMode: 'class',
     theme: {
       screens: {
         'extra-small': {'min': '275px', 'max':'474px'},

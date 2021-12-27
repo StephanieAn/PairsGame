@@ -3,26 +3,29 @@
 @tailwind utilities;
 
 body{
-    @apply bg-gray-800 text-white h-auto flex flex-col;
+    @apply text-black bg-gray-300 h-auto flex flex-col;
 }
+
 .header{
-    @apply text-white flex flex-col justify-center items-center p-5;
+    @apply text-black flex flex-col justify-center items-center p-5;
 }
 .header__title{
     @apply text-center my-3 font-bold text-3xl;
 }
 .btn__start{
-    @apply border-2 rounded-md bg-green-700 w-28 py-2; 
+    @apply border-2 rounded-md bg-green-300 w-28 py-2; 
 }
+
 .playground{
     @apply m-auto flex flex-wrap items-center justify-center h-auto;
 }
 .card{
+    @apply mx-12 my-10 border-green-400 border-4 rounded-md w-1/12 h-44 bg-green-200;
+}
+.card:dark{
     @apply mx-12 my-10 border-green-700 border-4 rounded-md w-1/12 h-44 bg-green-500;
 }
-/* .card:active{
-    @apply bg-green-700;
-} */
+
 .card:hover{
     @apply bg-green-700;
 }
